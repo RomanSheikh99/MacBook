@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- page title  -->
+    <title>Mac Book Pro</title>
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+    <!-- custom CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!----------------------------------------------
+         this page has no any header section 
+    ------------------------------------------------>
+
+    <!-- main section start -->
+    <main>
+        <!-- mac book configure section -->
+        <section>
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- mac book image section -->
+                    <aside class="col-md-6">
+                        <div class="img-container me-2">
+                            <img class="img-fluid" src="images/mac.png" alt="Mac Book Image">
+                        </div>
+                    </aside>
+                    <!-- mac book details section -->
+                    <aside class="col-md-6">
+                        <div class="details-container ms-2">
+                            <!-- title section -->
+                            <div>
+                                <h1>Customize your Blue 24-inch iMac with M1 chip.</h1>
+                                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic keyboard - US English.</p>
+                            </div>
+                            <!-- memory upgrade section -->
+                            <div>
+                                <label for="memory" class="d-block fw-bold mt-4 mb-2">Memory</label>
+                                <div class="btn-group">
+                                    <button id="memory-8gb" class="btn btn-outline-dark me-2 rounded-2 border-2 border-secondary">8GB unified memory</button>
+                                    <button id="memory-16gb" class="btn btn-outline-dark me-2 rounded-2 border-2 border-secondary">16GB unified memory</button>
+                                </div>
+                            </div>
+                            <!-- storage upgrade section -->
+                            <div>
+                                <label for="Storage" class="d-block fw-bold mt-4 mb-2">Storage</label>
+                                <div class="btn-group">
+                                    <button id="ssd-256gb" class="btn btn-outline-dark me-2 rounded-2 border-2 border-secondary">256GB SSD storage</button>
+                                    <button id="ssd-512gb" class="btn btn-outline-dark me-2 rounded-2 border-2 border-secondary">512GB SSD storage</button>
+                                    <button id="ssd-1tb" class="btn btn-outline-dark me-2 rounded-2 border-2 border-secondary">1TB SSD storage</button>
+                                </div>
+                            </div>
+                            <!-- delivery option -->
+                            <div>
+                                <label for="delivery" class="d-block fw-bold mt-4 mb-2">Choose your delivery option</label>
+                                <div class="btn-group">
+                                    <button id="aug-25" class="btn btn-outline-dark me-2 rounded-2 border-2 border-secondary">Friday, Aug 25 FREE Prime Delivery</button>
+                                    <button id="aug-21" class="btn btn-outline-dark me-2 rounded-2 border-2 border-secondary">Friday, Aug 21 Delivery Charge $20</button>
+                                </div>
+                            </div>
+                            <!-- Prices section -->
+                            <div class="w-50 mt-5">
+                                <div class="d-flex justify-content-between border-bottom border-secondary mt-2 border-1">
+                                    <h5>Best Price</h5>
+                                    <h5>$<span id="best-price">1299</span></h5>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary mt-2 border-1">
+                                    <h5>Extra Memory cost</h5>
+                                    <h5>$<span id="memory-cost">0</span></h5>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary mt-2 border-1">
+                                    <h5>Extra Storage cost</h5>
+                                    <h5>$<span id="storage-cost">0</span></h5>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-dark mt-2 border-2">
+                                    <h5>Delivery charge</h5>
+                                    <h5>$<span id="delivery-charge">0</span></h5>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary mt-2 border-1">
+                                    <h5>Total Price</h5>
+                                    <h5>$<span id="total-price">1299</span></h5>
+                                </div>
+                            </div>
+                            <!-- promo code section -->
+                            <div class="w-50 mt-4">
+                                <h5>Add Pomo Code</h5>
+                                <div class="input-group">
+                                    <input id="promo-input" type="text" class="form-control">
+                                    <button id="promo-btn" class="btn btn-danger" type="button">Apply</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+
+
+    <!-- footer section start -->
+    <footer>
+        <div class="container mt-5">
+            <div class="border-top border-secondary">
+                <h1 class="text-capitalize text-center my-4">total: $<span id="total">1299</span></h1>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    
+    <!-- main javaScript file link -->
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap JS file link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

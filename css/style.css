@@ -4,10 +4,13 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* custom css classes  */
 .width-50 {
     width: 50%;
 }
 
+/* create responsive for small devices */
 @media (max-width: 768px) {
     .width-100 {
         width: 100%;

@@ -15,8 +15,8 @@ function calculateTotal(){
    storageCost = parseFloat(storageCost);
    deliveryCharge = parseFloat(deliveryCharge);
    const total = bestPrice + memoryCost + storageCost + deliveryCharge;
-   document.getElementById('total-price').innerText = total;
    document.getElementById('total').innerText = total;
+   document.getElementById('total-price').innerText = total;
 }
 
 // add event handler to 8GB memory button
@@ -68,16 +68,15 @@ document.getElementById('aug-21').addEventListener('click', function(){
 document.getElementById('promo-btn').addEventListener('click', function(){
     let promo = document.getElementById('promo-input');
     let price = document.getElementById('total');
-    let priceAmount = parseFloat(total.innerText);
+    let Totalprice = document.getElementById('total-price');
     if(promo.value.toLowerCase() == 'stevekaku'){
+        let priceAmount = parseFloat(price.innerText);
         let discount  = (priceAmount / 100) * 20;
         let priceAfterDiscount = priceAmount - discount;
-        price.innerText = priceAfterDiscount.toFixed(2);
+        Totalprice.innerText = priceAfterDiscount.toFixed(2);
         promo.value = '';
-        promo.setAttribute('disabled', true);
-        document.getElementById('promo-btn').setAttribute('disabled', true);
     }
     else{
-        promo.value = "Code Dosn't Match";
+        promo.setAttribute('placeholder', "Code Dosn't Match");
     }
 })

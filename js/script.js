@@ -75,8 +75,10 @@ document.getElementById('promo-btn').addEventListener('click', function(){
         let priceAfterDiscount = priceAmount - discount;
         Totalprice.innerText = priceAfterDiscount.toFixed(2);
         promo.value = '';
+        promo.removeAttribute('placeholder');
     }
     else{
+        promo.value = '';
         promo.setAttribute('placeholder', "Code Dosn't Match");
     }
 })
